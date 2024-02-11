@@ -1,0 +1,140 @@
+/* Estilos generales */
+body {
+    scroll-behavior: smooth;
+}
+
+main {
+    font-family: "Source Code Pro", monospace;
+    font-size: 2.5rem;
+}
+
+h2 {
+    display: inline-block;
+    border-bottom: 3px solid #363636;
+    margin: 2rem;
+}
+
+i {
+    color: #363636;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 100;
+}
+
+/* Hola mundo */
+main img {
+    max-width: 500px;
+}
+
+#mensaje {
+    min-height: 4.5em;
+}
+
+/* About me */
+.oscuro {
+    background-color: rgb(36, 36, 36);
+    color: white;
+    font-family: "PT Sans", sans-serif;
+    min-height: 20vh;
+    padding: 7rem;
+}
+
+.oscuro p {
+    font-size: 1.5rem;
+}
+
+.oscuro h2 {
+    border-bottom: 3px solid white;
+}
+
+/* Tecnologías */
+.tecnologias {
+    font-family: "PT Sans", sans-serif;
+    padding: 7rem;
+}
+
+.tarjeta {
+    padding: 3rem;
+    text-align: center;
+}
+
+.tarjeta i {
+    font-size: 3rem;
+    /* border: 0.2rem solid #363636;
+    border-radius: 5px; */
+}
+
+.tarjeta h2 {
+    text-align: center;
+}
+
+/* Proyectos */
+#proyectos {
+    font-family: "PT Sans", sans-serif;
+    padding: 7rem;
+}
+
+#proyectos p {
+    font-size: 1.5rem;
+}
+
+/* Contacto */
+#contacto form {
+    font-family: "PT Sans", sans-serif;
+    font-size: 1.2rem;
+    border: 2px solid #363636;
+    border-radius: 10px;
+}
+
+#contacto button {
+    width: 50%;
+}
+
+#contador-mensaje {
+    color: #808080;
+    font-size: 0.9rem;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Footer */
+.footer-oscuro {
+    background-color: #363636;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "PT Sans", sans-serif;
+    color: #808080;
+}
+
+@media screen and (max-width: 600px) {
+
+    /* Hola mundo */
+    main img {
+        width: 80%;
+    }
+
+}
+
+/* Beackpoint md */
+@media screen and (max-width: 768px) {
+
+    /* About me */
+    .oscuro {
+        padding: 3rem 1.5rem;
+    }
+
+    /* Tecnologías */
+    .tecnologias {
+        padding: 3rem 0px;
+    }
+
+}

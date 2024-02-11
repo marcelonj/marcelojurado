@@ -1,11 +1,150 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcelo Jurado</title>
+  <!-- Metadatos -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcelo Jurado | Desarrollador PHP fullstack</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Hola, esta es la página de presentación de Marcelo Jurado</h1>
+  <!-- Navabar -->
+  <nav class="navbar navbar-expand-md">
+    <div class="container d-flex justify-content-between align-items-start">
+      <div class="d-flex align-items-start"><i class="bi bi-code-square"></i>
+      </div>
+      <div class="pt-1">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-principal"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-principal">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tecnologias">Tecnologías</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hola mundo -->
+  <main class="container text-center mt-5 d-flex flex-column align-items-center">
+    <div id="mensaje">Hola mundo! soy Marcelo, el desarrollador PHP fullstack que buscabas.</div>
+    <img src="imagenes/notebook.png" alt="Monitor con codigo" class="mt-5 px-3">
+  </main>
+
+  <!-- About me -->
+  <div class="oscuro" id="about">
+    <div class="container">
+      <h2>Quién soy?</h2>
+      <p>Me presento, soy Marcelo! un estudiante de programación y autodidacta que busca formar parte de la industria
+        del desarrollo de software. Me interesa particularmente el mundo de la programación web, conectarnos y mostrarnos
+        al mundo con estilo propio y a medida.</p>
+    </div>
+  </div>
+
+  <!-- Tecnologías -->
+  <div class="tecnologias" id="tecnologias">
+    <div class="container d-flex flex-column align-items-center">
+      <h2>Tecnologías que manejo</h2>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="tarjeta d-flex flex-column align-items-center">
+            <i class="bi bi-filetype-html my-2"></i>
+            <h3 class="my-2">HTML</h3>
+            <p class="my-2">El esqueleto de cualquier pagina web. Con el correcto uso de los metadatos, las etiquetas semánticas y otros factores puedo aprovechar este lenguaje de marcado de hipertexto para mejorar el SEO de tu página web y posicionarla mejor!</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="tarjeta d-flex flex-column align-items-center">
+            <i class="bi bi-filetype-css my-2"></i>
+            <h3 class="my-2">CSS</h3>
+            <p class="my-2">Gracias a la hoja de estilo en cascada podemos conseguir mejorar el apartado visual de tu web y llegar al resultado que tienes en mente logrando captar la atención de tus visitantes y haciendo que su navegación sea más amena visualmente.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="tarjeta d-flex flex-column align-items-center">
+            <i class="bi bi-filetype-js my-2"></i>
+            <h3 class="my-2">Javascript</h3>
+            <p class="my-2">Con este lenguaje de programación podemos agregar interactividad y funcionalidad a tu sitio para que quien lo navegue no solo vea texto e imágenes estáticas y aburridas.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="tarjeta d-flex flex-column align-items-center">
+            <i class="bi bi-filetype-php my-2"></i>
+            <h3 class="my-2">PHP</h3>
+            <p class="my-2">Si lo que buscas es algo más complejo que requiere guardar y administrar datos o interconectarse podemos lograr grandes resultados gracias a PHP, uno de los lenguajes más populares , confiable y presente en el internet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Proyectos -->
+  <div class="container-fluid m-0 d-flex flex-column justify-content-center align-items-center" id="proyectos">
+    <h2 class="text-center">Proyectos</h2>
+    <p class="text-center my-4">🚧 Sección en construcción 🚧</p>
+    <img src="imagenes/sitio_en_construccion.png" alt="construccion" class="img-fluid">
+  </div>
+
+  <div class="container-fluid" id="contacto">
+    <form action="mail.php" method="post" class="container d-flex flex-column align-items-center justify-content-center mb-5 p-md-5">
+      <h2 class="text-center mb-4">Contacta conmigo:</h2>
+      <label for="nombre" class="form-label">Nombre</label>
+      <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingresa tu nombre" required>
+      <label for="email" class="form-label">Mail</label>
+      <input type="email" name="mail" id="mail" class="form-control" placeholder="nombre@ejemplo.com" required>
+      <label for="mensaje" class="form-label">Mensaje</label>
+      <textarea name="mensaje" id="textarea-mensaje" cols="30" rows="10" class="form-control" maxlength="300" required></textarea>
+      <div id="contador-mensaje">0 / 300</div>
+      <button type="submit" class="btn btn-success mt-5">Enviar</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer-oscuro">
+    <p class="m-0 text-center">&copy 2024 Marcelo Jurado | Todos los derechos reservados</p>
+  </div>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!-- JS propietario -->
+  <script src="script.js"></script>    
 </body>
+
 </html>
